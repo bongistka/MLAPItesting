@@ -33,6 +33,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6329167462270234215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7116092701110188806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c34c8340702c4c2459abfb59b7418e5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boundaryMaterial: {fileID: 2100000, guid: 73cd10ee5aae68e4888a960c154359d9, type: 2}
+  wallMaterial: {fileID: 2100000, guid: 22cfe9a68aed2f24699210addb544212, type: 2}
+  playerTag: Player
+  fadeSpeed: 1
 --- !u!1001 &828618810871019535
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -845,10 +861,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 828618811607240797}
     m_Modifications:
-    - target: {fileID: 959542779, guid: 8eda580449490b1419900a9bcfd73880, type: 3}
-      propertyPath: playerTag
-      value: HeadCollider
-      objectReference: {fileID: 0}
     - target: {fileID: 7619713371800734773, guid: 8eda580449490b1419900a9bcfd73880,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -909,9 +921,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boundaries
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 959542779, guid: 8eda580449490b1419900a9bcfd73880, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8eda580449490b1419900a9bcfd73880, type: 3}
+--- !u!1 &7116092701110188806 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7619713371800734774, guid: 8eda580449490b1419900a9bcfd73880,
+    type: 3}
+  m_PrefabInstance: {fileID: 828618811439986480}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7116092701110188805 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7619713371800734773, guid: 8eda580449490b1419900a9bcfd73880,

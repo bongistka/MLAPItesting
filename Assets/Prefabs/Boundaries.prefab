@@ -617,7 +617,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7619713371800734773}
   - component: {fileID: 139701992}
-  - component: {fileID: 959542779}
   m_Layer: 0
   m_Name: Boundaries
   m_TagString: Untagged
@@ -659,22 +658,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &959542779
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7619713371800734774}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ead84bbcb06566e45b8940f72067cd12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  boundaryMaterial: {fileID: 2100000, guid: 73cd10ee5aae68e4888a960c154359d9, type: 2}
-  wallMaterial: {fileID: 2100000, guid: 22cfe9a68aed2f24699210addb544212, type: 2}
-  playerTag: Player
-  fadeSpeed: 1
 --- !u!1 &7675150834628070830
 GameObject:
   m_ObjectHideFlags: 0

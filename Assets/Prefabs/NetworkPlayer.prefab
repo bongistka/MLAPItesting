@@ -267,6 +267,7 @@ GameObject:
   - component: {fileID: 2048055660813636257}
   - component: {fileID: 8897536628922941207}
   - component: {fileID: 2331350693666243363}
+  - component: {fileID: 8590816713491250973}
   m_Layer: 0
   m_Name: NetworkPlayer
   m_TagString: Untagged
@@ -354,6 +355,19 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8590816713491250973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5937045899670579723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c3bc86167e90ab4eb6e470292b10705, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerLocal: {fileID: 0}
 --- !u!1 &7214766963666708162
 GameObject:
   m_ObjectHideFlags: 0
