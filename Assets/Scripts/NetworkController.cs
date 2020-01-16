@@ -10,14 +10,11 @@ public class NetworkController : NetworkedBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (IsLocalPlayer)
-        {
-            controllerTransform = GameObject.FindWithTag(controllerString).transform;
+        controllerTransform = GameObject.FindWithTag(controllerString).transform;
 
-            this.transform.SetParent(controllerTransform);
-            this.transform.localPosition = Vector3.zero;
-            this.transform.localRotation = Quaternion.identity;
-        }
+        this.transform.SetParent(controllerTransform);
+        this.transform.localPosition = Vector3.zero;
+        this.transform.localRotation = Quaternion.identity;
     }
 
     // Update is called once per frame

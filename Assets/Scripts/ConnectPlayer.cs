@@ -8,11 +8,26 @@ public class ConnectPlayer : MonoBehaviour
     public GameObject playerPrefab;
     public GameObject leftControllerPrefab;
     public GameObject rightControllerPrefab;
+    public bool isServer;
+    public bool isClient;
+    public bool isHost;
 
     // Start is called before the first frame update
     void Start()
     {
-        NetworkingManager.Singleton.StartHost();
+        if (isServer)
+        {
+            NetworkingManager.Singleton.StartServer();
+        } 
+        if (isClient)
+        {
+            NetworkingManager.Singleton.StartClient();
+        }
+        if (isHost)
+        {
+            NetworkingManager.Singleton.StartHost();
+        }
+        
         //GameObject leftController = Instantiate(leftControllerPrefab);
         //GameObject rightController = Instantiate(rightControllerPrefab);
     }
