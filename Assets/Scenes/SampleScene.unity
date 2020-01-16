@@ -186,6 +186,12 @@ MonoBehaviour:
     - Prefab: {fileID: 5937045899670579723, guid: 0c7b771dddf4dae42a7a5f99a1a3b43d,
         type: 3}
       PlayerPrefab: 1
+    - Prefab: {fileID: 2486995780923879113, guid: d7918b03eee17e541a35bd26f66d4577,
+        type: 3}
+      PlayerPrefab: 0
+    - Prefab: {fileID: 4963675942176660328, guid: 9e978ce6f8a12a94795adf1b26e5c062,
+        type: 3}
+      PlayerPrefab: 0
     PlayerPrefabHash:
       Value: 12678914256364931730
     CreatePlayerPrefab: 1
@@ -240,6 +246,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 5937045899670579723, guid: 0c7b771dddf4dae42a7a5f99a1a3b43d,
+    type: 3}
+  leftControllerPrefab: {fileID: 2486995780923879113, guid: d7918b03eee17e541a35bd26f66d4577,
+    type: 3}
+  rightControllerPrefab: {fileID: 4963675942176660328, guid: 9e978ce6f8a12a94795adf1b26e5c062,
     type: 3}
 --- !u!1 &1089721152 stripped
 GameObject:
@@ -455,6 +465,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 165334, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_TagString
+      value: ControllerRight
+      objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -498,6 +512,10 @@ PrefabInstance:
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013428287994, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_TagString
+      value: ControllerLeft
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}

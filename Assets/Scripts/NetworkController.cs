@@ -2,24 +2,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class NetworkPlayer : NetworkedBehaviour
+public class NetworkController : NetworkedBehaviour
 {
-    public Transform playerLocal;
-    public Text playerName;
+    public Transform controllerTransform;
+    public string controllerString;
     // Start is called before the first frame update
     void Start()
     {
         if (IsLocalPlayer)
         {
-            playerLocal = GameObject.FindWithTag("FollowHead").transform;
+            controllerTransform = GameObject.FindWithTag(controllerString).transform;
 
-            this.transform.SetParent(playerLocal);
+            this.transform.SetParent(controllerTransform);
             this.transform.localPosition = Vector3.zero;
             this.transform.localRotation = Quaternion.identity;
-
-            playerName.text = SystemInfo.deviceName;
         }
     }
 
