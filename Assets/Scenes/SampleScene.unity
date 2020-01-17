@@ -170,7 +170,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 675485879}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1682170820, guid: 01701b64234b4d523d8045142cbc73fa, type: 3}
+  m_Script: {fileID: 11500000, guid: 120550e8e6fa85b49b6c6fcf738e378a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   DontDestroy: 1
@@ -186,12 +186,6 @@ MonoBehaviour:
     - Prefab: {fileID: 5937045899670579723, guid: 0c7b771dddf4dae42a7a5f99a1a3b43d,
         type: 3}
       PlayerPrefab: 1
-    - Prefab: {fileID: 2486995780923879113, guid: d7918b03eee17e541a35bd26f66d4577,
-        type: 3}
-      PlayerPrefab: 0
-    - Prefab: {fileID: 4963675942176660328, guid: 9e978ce6f8a12a94795adf1b26e5c062,
-        type: 3}
-      PlayerPrefab: 0
     PlayerPrefabHash:
       Value: 12678914256364931730
     CreatePlayerPrefab: 1
@@ -251,7 +245,7 @@ MonoBehaviour:
     type: 3}
   rightControllerPrefab: {fileID: 4963675942176660328, guid: 9e978ce6f8a12a94795adf1b26e5c062,
     type: 3}
-  isServer: 0
+  isServer: 1
   isClient: 0
   isHost: 0
 --- !u!1 &1089721152 stripped
