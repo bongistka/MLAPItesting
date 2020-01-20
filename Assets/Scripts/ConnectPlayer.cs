@@ -28,8 +28,8 @@ public class ConnectPlayer : MonoBehaviour
             NetworkingManager.Singleton.StartHost();
         }
         
-        //GameObject leftController = Instantiate(leftControllerPrefab);
-        //GameObject rightController = Instantiate(rightControllerPrefab);
+        GameObject leftController = Instantiate(leftControllerPrefab);
+        GameObject rightController = Instantiate(rightControllerPrefab);
     }
 
     // Update is called once per frame
